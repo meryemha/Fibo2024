@@ -38,7 +38,7 @@ jobs:
           fi
 
   build:
-
+    needs : [tags]
     runs-on: ubuntu-latest
 
     steps:
