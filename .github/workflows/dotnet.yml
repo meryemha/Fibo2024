@@ -15,7 +15,7 @@ permissions:
   packages: write
  
 
-jobs: 
+jobs:
   tags:
     runs-on: ubuntu-latest
     outputs:
@@ -35,7 +35,7 @@ jobs:
             echo "new_version=${{ steps.tag_version.outputs.new_version }}" >> $GITHUB_OUTPUT
           else
             echo "new_version=pr-${{ github.event.number }}-${{ github.run_number }}" >> $GITHUB_OUTPUT
-      
+          fi
 
   build:
 
