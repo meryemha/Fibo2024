@@ -81,7 +81,7 @@ jobs:
       
       
   deploy_azure:
-    needs: [ build_docker_webapp, tags ]
+    needs: [ build_docker_webapp, tags]
     runs-on: ubuntu-latest
     steps:
       - name: azure login
