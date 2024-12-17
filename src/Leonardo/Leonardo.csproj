@@ -7,4 +7,12 @@
     <PackageId>Meryem.Hamidi.Alaoui.Fibonacci</PackageId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityframeworkCore.SqlServer" Version="9.0.0" />
+  </ItemGroup>
+
 </Project>
